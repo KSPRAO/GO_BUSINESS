@@ -1,0 +1,348 @@
+/* Basic Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #111827;
+}
+
+/* --- Login Page --- */
+.login-viewport {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-card {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.brand-title {
+  color: #6366f1;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.brand-tagline {
+  color: #6b7280;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* --- Navbar --- */
+.main-navbar {
+  background-color: white;
+  padding: 15px 30px;
+  border-bottom: 1px solid #eee;
+}
+
+.navbar-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-logo {
+  color: #6366f1;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.nav-link {
+  display: none; /* Hidden to match mockup visually */
+}
+
+.try-free-btn {
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.logout-btn {
+  background-color: white;
+  color: #6366f1;
+  border: 1px solid #ccc;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* --- Dashboard General --- */
+.dashboard-content, .detail-main-viewport {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.dashboard-heading {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.dashboard-subtitle {
+  color: #6b7280;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.dashboard-section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #eee;
+}
+
+.section-title {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+/* --- Metrics Grid --- */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+.metric-box-card {
+  border: 1px solid #eee;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.metric-numeric-value {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.metric-title-label {
+  color: #6b7280;
+  font-size: 12px;
+}
+
+/* --- Tables --- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #f9fafb;
+  padding: 15px;
+  text-align: left;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+/* Make the profit column blue like the mockup */
+.interactive-dataset-table td:nth-child(4) {
+  color: #6366f1;
+  font-weight: bold;
+}
+
+/* --- Share Section --- */
+.sharing-controls-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.share-field-row label {
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  color: #6b7280;
+  margin-bottom: 5px;
+}
+
+.input-action-group {
+  display: flex;
+}
+
+.input-action-group input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+.action-copy-btn {
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  padding: 0 20px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+/* --- Pagination --- */
+.pagination-footer-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.pagination-summary-text {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.pagination-action-buttons button {
+  padding: 5px 10px;
+  margin-left: 5px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.pagination-action-buttons .active-page {
+  background-color: #6366f1;
+  color: white;
+  border-radius: 50%;
+}
+
+/* --- Detail Page --- */
+.detail-card-frame {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+.navigation-return-link {
+  color: #6366f1;
+  text-decoration: none;
+}
+
+.partner-name-heading {
+  margin: 20px 0;
+}
+
+.structured-definition-list dt {
+  font-weight: bold;
+  color: #6b7280;
+  width: 200px;
+}
+
+.structured-definition-list .definition-item-row {
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+}
+
+/* --- Error States & Filters --- */
+.error-alert-panel {
+  background-color: #ffeaea;
+  color: red;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.notfound-viewport {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.table-header-control-strip {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.search-box-element input, .sort-dropdown-element select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* --- Footer --- */
+.dashboard-global-footer {
+  margin-top: 50px;
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+}
+
+.footer-inner-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.footer-links-nav a {
+  margin-right: 15px;
+  color: #6b7280;
+  text-decoration: none;
+}
+
+.metric-icon-box {
+  background-color: #6366f1;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
